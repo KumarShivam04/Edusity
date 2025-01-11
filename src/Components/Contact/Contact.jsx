@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+
 import msg_icon from "../../assets/msg-icon.png";
 import mail_icon from "../../assets/mail-icon.png";
 import phone_icon from "../../assets/phone-icon.png";
@@ -11,8 +12,6 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
-
-    // toast.info("Sending your message...", { autoClose: 2000 });
 
     const formData = new FormData(event.target);
     formData.append("access_key", "85209dd3-eba7-4155-b28c-de1dc7965936");
